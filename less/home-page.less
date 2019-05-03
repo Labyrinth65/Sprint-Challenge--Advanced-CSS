@@ -1,7 +1,6 @@
 // Home Content
 
 .home {
-  margin-top: 110px;
   @media @phone {
     margin: 0 2%;
     width: 96%;
@@ -126,15 +125,12 @@ header {
   .flexRow();
   justify-content: center;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   top: 0;
-  background: @wild-sand;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
+  background: fade(@wild-sand, 90%);
   width: 100%;
   height: 110px;
   @media @phone {
-    position: static;
     height: 80px;
   }
   .header-content {

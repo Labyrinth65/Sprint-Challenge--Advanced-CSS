@@ -205,9 +205,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home {
-  margin-top: 110px;
-}
 @media (max-width: 500px) {
   .home {
     margin: 0 2%;
@@ -328,17 +325,14 @@ header {
   flex-flow: row wrap;
   justify-content: center;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   top: 0;
-  background: #F6F6F6;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
+  background: rgba(246, 246, 246, 0.9);
   width: 100%;
   height: 110px;
 }
 @media (max-width: 500px) {
   header {
-    position: static;
     height: 80px;
   }
 }
