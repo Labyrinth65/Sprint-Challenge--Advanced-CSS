@@ -1,1 +1,23 @@
 // Mixins Here
+.flexRow {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flexColumn {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.button (@color, @radius: 0) {
+    padding: 8px 25px;
+    border-radius: @radius;
+    background-color: @color;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        background-color: white;
+        color: @color;
+        transition: 1s;
+    }
+}
